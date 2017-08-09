@@ -46,12 +46,12 @@ This plugin uses [glob](https://github.com/isaacs/node-glob) npm module for disc
 Let's assume we have two files:
 ```
 // ./features/featureA.js
-modules.exports = {
+module.exports = {
     feature: 'A'
 };
 
 // ./features/featureB.js
-modules.exports = {
+module.exports = {
     feature: 'B'
 };
 ```
