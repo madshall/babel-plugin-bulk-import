@@ -20,7 +20,7 @@ export default ({types: t}) => {
 
         // node module
         if (!source.match(/^[./]/)) {
-          var anyModulePath = require.resolve('babel');
+          var anyModulePath = require.resolve('babel-core');
           source = anyModulePath.replace(/(.*\/node_modules\/).*/, "$1") + source;
         } else {
           // building full path to source
