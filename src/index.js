@@ -15,7 +15,7 @@ export default ({types: t}) => {
         // not our guy
         if (!source.match(/\*/)) return;
 
-        const workingDirectory = this.file.parserOpts.sourceFileName || this.file.parserOpts.filename;
+        const workingDirectory = this.file.opts.parserOpts.sourceFileName || this.file.opts.parserOpts.filename;
         const offsetDirectory = Path.dirname(workingDirectory);
 
         // node module
